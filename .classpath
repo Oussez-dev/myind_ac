@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/turbomeca.gamme.ecran.services"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/hibernate-commons-annotations/hibernate-commons-annotations-4.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/hibernate-core/hibernate-core-4.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/hibernate-entity-manager/hibernate-entitymanager-4.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/hibernate-jpa/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/spring-data/spring-data-commons-1.6.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/spring-data/spring-data-jpa-1.4.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/apache/log4j/1.2.14/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/jdom/jdom.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/jaxen/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/apache/commons/1.4.1/commons-io-1.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/turbomeca.gamme.ecran.server.ws"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/castor/1.3/castor-1.3-anttasks.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/castor/1.3/castor-1.3-codegen.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/castor/1.3/castor-1.3-core.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/castor/1.3/castor-1.3-ddlgen.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/castor/1.3/castor-1.3-jdo.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/castor/1.3/castor-1.3-xml-schema.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/castor/1.3/castor-1.3-xml.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/castor/1.3/castor-1.3.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/mockito/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-aop-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-beans-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-context-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-core-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-expression-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-jdbc-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-orm-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-test-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/turbomeca.gamme.ecran.external.libraries/spring/4.3.22/spring-tx-4.3.22.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
