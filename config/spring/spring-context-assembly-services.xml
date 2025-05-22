@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:repository="http://www.springframework.org/schema/data/repository"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/data/repository http://www.springframework.org/schema/data/repository/spring-repository-1.6.xsd">
+
+	<!-- Properties files -->
+	<context:property-placeholder location="classpath:database_assembly.properties"
+		ignore-resource-not-found="true" />
+
+	<!-- Scanning services package -->
+	<context:component-scan base-package="turbomeca.gamme.assembly.services.ressources" />
+	
+	<import resource="classpath:spring/spring-context-services.xml" />
+
+	<bean id="entityManagerFactoryBean"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+		p:dataSource-ref="dataSource" p:persistenceProviderClass="org.hibernate.jpa.HibernatePersistenceProvider"
+		p:jpaVendorAdapter-ref="vendorAdapter">
+		<property name="packagesToScan">
+			<array>
+				<value>turbomeca.gamme.ecran.services.schedule.bo</value>
+				<value>turbomeca.gamme.ecran.services.runtime.bo</value>
+				<value>turbomeca.gamme.ecran.services.publication.bo</value>
+				<value>turbomeca.gamme.ecran.services.notification.bo</value>
+				<value>turbomeca.gamme.ecran.services.document.bo</value>
+				<value>turbomeca.gamme.ecran.services.common.bo</value>
+				<value>turbomeca.gamme.ecran.services.measure.bo</value>
+				<value>turbomeca.gamme.ecran.services.process.bo</value>
+				<value>turbomeca.gamme.ecran.services.bodb.bo</value>
+			</array>
+		</property>
+	</bean>
+
+
+	<jpa:repositories base-package="turbomeca.gamme.assembly.services"
+			transaction-manager-ref="transactionManager"
+		entity-manager-factory-ref="entityManagerFactoryBean">
+	</jpa:repositories>
+	
+	
+</beans>
